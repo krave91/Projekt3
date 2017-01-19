@@ -24,16 +24,16 @@ public class Klient {
 	
 	@Id
 	@Column(unique=true, nullable=false)
-	private int id;
+	private Long id;
 	
 	@Column
-	private String imie;
+	private String Imie;
 	
 	@Column
-	private String nazwisko;
+	private String Nazwisko;
 	
 	public String getNazwisko(){
-		return nazwisko;
+		return Nazwisko;
 	}
 	
 }

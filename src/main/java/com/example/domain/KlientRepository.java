@@ -14,6 +14,6 @@ public interface KlientRepository extends CrudRepository<Klient, Long>{
 	//public List<Klient> findByName(@Param("imie") String imie);
 	public List<Klient> findAll();
 
-	 @Query("select nazwisko from Testowa t where t.id = 0")
+	 @Query("select Nazwisko from Klient k where k.id = 0")
 	  String findOczkowicz();
 }

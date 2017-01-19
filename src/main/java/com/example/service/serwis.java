@@ -13,7 +13,7 @@ import com.example.domain.KlientRepository;
 import com.example.uslugi.Controller1;
 
 @Component
-public class serwis {
+public class Serwis {
 	
 	@Autowired
 	KlientRepository repozytoriumKlientow;
@@ -23,11 +23,11 @@ public class serwis {
 	public String pobierz(){
 		Klient janek = repozytoriumKlientow.findById(new Long(0));
 		
-		JsonObject json = Json.createObjectBuilder().add("name", Klient.getNazwisko().toString()).add("surname", "cos").build();
-		json.toString();
-		log.info("\n-------------------------info--------------------------------");
-		log.info("\n-----"+janek.toString()+"-----");
-		return json.toString();
+//		JsonObject json = Json.createObjectBuilder().add("name", janek.getNazwisko().toString()).add("surname", "cos").build();
+//		json.toString();
+//		log.info("\n-------------------------info--------------------------------");
+//		log.info("\n-----"+janek.toString()+"-----");
+		return janek.getNazwisko();
 	}
 
 }
