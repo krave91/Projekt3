@@ -23,17 +23,17 @@ public class Klient {
 	//private static final long serialVersionUID = 1L;
 	
 	@Id
-	@Column(unique=true, nullable=false)
+	@Column(name="id", unique=true, nullable=false)
 	private Long id;
 	
-	@Column
-	private String Imie;
+	@Column(name="Imie", length=45)
+	private String imie;
 	
-	@Column
-	private String Nazwisko;
+	@Column(name="Nazwisko", length=45)
+	private String nazwisko;
 	
 	public String getNazwisko(){
-		return Nazwisko;
+		return nazwisko;
 	}
 	
 }

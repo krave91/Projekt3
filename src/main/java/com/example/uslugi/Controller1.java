@@ -8,7 +8,7 @@ import org.springframework.web.bind.annotation.RestController;
 import com.example.service.Serwis;
 
 @RestController
-@RequestMapping("/controler")
+@RequestMapping("/controller")
 public class Controller1 {
 	
 	@Autowired
